@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import './Interface.css';
+import { createContext } from 'react';
+import Llm from './Llm';
 
-
+export const myContext = createContext();
 function Interface() {
   const [text,setText]=useState("")
   const [showText, setShowText] = useState(false);
@@ -11,6 +13,8 @@ function Interface() {
   const handleInputChange = (event) => {
     setText(event.target.value);
   };
+   
+ 
   return (
     <div className='all'>
     <div className='border'>
@@ -19,11 +23,16 @@ function Interface() {
        
           <input type='text' value={text} className='input' onChange={handleInputChange} placeholder='Enter your Question'></input>
            <button onClick={handle}>Enter</button>
+
            
-          
+
         </div>
       </div>
+      <myContext.Provider value={text}>
+        <Llm/>
+      </myContext.Provider>
     </div>
+    
 
 
   )
