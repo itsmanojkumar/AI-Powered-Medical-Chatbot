@@ -3,6 +3,8 @@ AI-Powered Medical Chatbot
 
 An AI-powered chatbot designed to provide medical information, answer health-related queries, and assist users in understanding symptoms. This chatbot leverages machine learning and NLP to deliver accurate and informative responses.
 
+video: https://github.com/itsmanojkumar/AI-Powered-Medical-Chatbot/blob/main/Medical%20chatbot.mp4   
+
 Features
 
 Symptom Analysis: Provides possible causes based on symptoms.
